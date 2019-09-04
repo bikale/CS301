@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Address</title>
+    <script>
+        function makeaddress() {
+            let $name = document.getElementById("name").value;
+            let $street = document.getElementById("street").value;
+            let $city = document.getElementById("city").value;
+            let $state = document.getElementById("state").value;
+            let $zipcode = document.getElementById("zipcode").value;
+            let correct_id = $name + "<br>" + $street + "<br>" + $city + "," + $state + " " + $zipcode;
+            document.getElementById("displayadd").innerHTML = "<p>Your address</p>" + correct_id;
+        }
+
+    </script>
+</head>
+
+<body>
+    <p>Name <input type="text" id="name"></p>
+    <p> Street <input type="text" id="street"></p>
+    <p>City <input type="text" id="city">
+        State <input type="text" id="state">
+        Zip Code <input type="number" id="zipcode"></p>
+    <button type="button" onclick="makeaddress()">Make Address</button>
+    <br>
+
+    <div id="displayadd"></div>
+</body>
+
+</html>

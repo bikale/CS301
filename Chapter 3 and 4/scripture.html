@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Scripture</title>
+    <script>
+        function showscripture() {
+            let name = document.getElementById("username").value;
+            let printscript = "I " + name + " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            document.getElementById("displayscript").innerHTML = printscript;
+        }
+
+    </script>
+</head>
+
+<body>
+    <p>Please enter your name</p>
+    <input type="text" id="username">
+    <button type="button" onclick="showscripture()">Show My Verse</button>
+    <div id="displayscript"></div>
+</body>
+
+</html>
